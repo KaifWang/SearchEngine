@@ -1,0 +1,22 @@
+#!/bin/bash
+set -Eeuo pipefail
+
+check_file()
+{
+    SUM1=$(md5sum "./checkpoints/checkalive.txt")
+    sleep 100
+    SUM2=$(md5sum "./checkpoints/checkalive.txt")
+    if [ "$SUM1" == "$SUM2" ];
+    then
+        echo "$@: Crawler Have End"
+    else
+        echo "$@: Crawler Alive"
+    fi
+}
+
+check_file
+
+#echo "$@: start supervise"
+#while true; do
+#    check_file
+#done;

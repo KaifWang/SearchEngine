@@ -1,0 +1,23 @@
+#!/bin/bash
+set -Eeuo pipefail
+
+check_file()
+{
+    SUM1=$(md5sum "./checkpoints/checkalive.txt")
+    sleep 100
+    SUM2=$(md5sum "./checkpoints/checkalive.txt")
+    if [ "$SUM1" == "$SUM2" ];
+    then
+        echo "$@: Crawler Have End, Restart"
+        ./crawler.o 8 > output.txt &
+    else
+        echo "$@: Crawler Alive"
+    fi
+}
+
+# ./crawler.o 8 >> output.txt &
+# ./start0 > startlog.txt &
+echo "$@: Start to run crawler first time"
+while true; do
+    check_file
+done;

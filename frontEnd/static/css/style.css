@@ -1,0 +1,268 @@
+html{
+    height:100%;
+    min-height:100%;
+    margin:0;
+    padding:0;
+}
+
+.center {
+    display: block;
+    width: 30%;
+    height: 15%;
+    float: middle;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about-button{
+    text-decoration: none;
+    margin:5px;
+    padding-top: 10px;
+    overflow: hidden;
+    font-family: Arial;
+}
+
+#about-button:hover{
+    text-decoration: underline;
+    overflow: hidden;
+    font-family: Arial;
+}
+
+#box{
+    margin-top: 5%;
+    text-align: center;
+}
+
+#searchinput{
+    margin-bottom:30px;
+    text-align:left;
+    width:50%;
+    height:30px;
+    padding:10px;
+    font-size:15px;
+    border-radius:20px;
+}
+
+
+#search-button{
+    border:none;
+    width:100px;
+    height: 50px;
+    padding: 10px;
+    font-size:15px;
+    border-radius:20px;
+    cursor:pointer;
+    background:cadetblue;
+}
+
+#search-button:hover{
+    background-color: rgb(201, 72, 72);
+}
+
+/* Result.html*/
+h2{
+    display: block;
+    font-weight: normal;
+    font-size: 1.6em;
+    text-align: left;
+    margin-right: 1em;
+    color:rgb(223, 83, 31);
+}
+#header{
+    width: 625px;
+    height: 45px;
+    border-radius: 100px;
+    border-color: lightgray;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 16px;
+    position: relative;
+    bottom: 10px;
+    overflow: hidden;
+    display: flex;
+    z-index: 100;
+}
+
+#header > input {
+    height: 45px;
+    border-style: none;
+    font-size: 16px;
+    line-height: 45px;
+    padding-left: 20px;
+    flex: 1;
+}
+
+#header:hover {
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+#search{
+    display: flex;
+    top:0;
+    height: 64px;
+    width: 100%;
+    align-items: flex-end;
+    position: fixed;
+    font-weight: normal;
+    background-color:white;
+    -webkit-box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
+    z-index: 10;
+}
+
+.search-us h2 a{
+    text-decoration: none;
+    color:rgb(223, 83, 31);
+}
+
+#EnterButton{
+    border:none;
+    width:100px;
+    padding: 10px;
+    font-size:15px;
+    border-radius:20px;
+    cursor:pointer;
+    background:cadetblue;
+}
+
+#search-result{
+    margin-left:150px;
+    font-family: 'Arial';
+    position:relative;
+    padding-top: 60px;
+    margin-top: 20px;
+}
+
+.result{
+    margin-left: 8px;
+}
+
+.result h2 a{
+    font-size: 19px;
+    font-weight: normal;
+    color: rgb(29, 1, 189);
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.result h3{
+    font-size: 14px;
+    color: green;
+    font-weight: normal;
+    margin-bottom: 0px;
+    margin-top: -20px;
+}
+
+.result p{
+    width:625px;
+    font-size:13px;
+    text-transform: capitalize;
+    margin-top:0px;
+    color:rgb(82, 82, 82);
+}
+
+.page{
+    padding-bottom: 50px;
+    padding-left: 350px;
+    margin-top: 30px;
+}
+
+.page ul {
+    position:block;
+}
+  
+.page ul li{
+    display:inline-block;
+    margin-right:15px;
+}
+  
+.page ul li a {
+    text-decoration:none;
+    color:#1c46c6;
+    font-size:16px;
+}
+  
+.page ul li a:hover {
+    text-decoration:underline;
+}
+  
+.page ul li a:active {
+    color:black;
+    text-decoration:none;
+}
+
+.previous::before{
+    content: '<';
+    display:block;
+    position:absolute;
+    right:12px;
+    top:-35px;
+    color:rgb(29,135,255);
+    font-size:20px;
+    transform: scale(0.7, 1.2);
+}
+
+.previous::after{
+    content: '';
+    display:block;
+    position:absolute;
+    right:-40px;
+    top:-35px;
+    width: 40px;
+    height: 40px;
+}
+
+.next::before{
+    content: '>';
+    display:block;
+    position:absolute;
+    right:12px;
+    top:-35px;
+    color:rgb(29,135,255);
+    font-size:20px;
+    transform: scale(0.7, 1.2);
+}
+
+.next::after{
+    content: '';
+    display:block;
+    position:absolute;
+    right:-40px;
+    top:-35px;
+    width: 40px;
+    height: 40px;
+}
+
+#noresult{
+    margin-left:150px;
+    font-family: 'Arial';
+    font-size: large;
+    position:relative;
+    padding-top: 100px;
+    margin-top: 20px;
+}
+
+#noresult li{
+    margin-top:7px;
+}
+
+.noresult-input{
+    font-weight: bold;
+}
+
+#too-many{
+    margin-left:150px;
+    font-family: 'Arial';
+    font-size: large;
+    position:relative;
+    padding-top: 100px;
+    margin-top: 20px;
+}
+
+.too-many-input{
+    font-weight: bold;
+}

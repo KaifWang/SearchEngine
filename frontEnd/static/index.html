@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/style.css">
+        <a id = "about-button" href="about.html">About</a>
+        <img src="logo.png" alt="Team Logo" class="center">
+        <title>Search Us</title>
+    </head>
+    <body>
+
+      <div id="box">
+          <form id="searchForm" action="/?1?" method="get" target=""
+             onsubmit="location.href = this.action + this.searchinput.value; return false;">
+             <input id="searchinput" type="text" name = "searchContent" placeholder="Search Us" required>
+             <button type="submit" id="search-button">Search</button>
+          </form>
+      </div>
+      
+
+
+    </body>
+
+</html>

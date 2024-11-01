@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html {
+  box-sizing: border-box;
+  background-color: white;
+}
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 30px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width:100%;
+}
+
+.container {
+  padding: 0 10px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: rgb(53, 115, 230);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button a{
+    text-decoration: none;
+    color:white;
+}
+
+.button:hover {
+  background-color:rgb(230, 175, 39);
+}
+
+.SU a{
+    text-decoration: none;
+    color: rgb(223, 83, 31);
+}
+
+</style>
+</head>
+<body>
+
+
+<h2 class="SU"><a href="index.html">Search Us</a></h2>
+<p>About Our Team</p>
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Xiao Song</h2>
+        <p class="title">Senior</p>
+        <p>This course is too hard</p>
+        <p>xiaosx@umich.edu</p>
+        <p><button class="button"><a href="mailto:xiaosx@umich.edu">Contact</a></button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Kai Wang</h2>
+        <p class="title">Senior</p>
+        <p>Cool people need no description</p>
+        <p>kaifan@umich.edu</p>
+        <p><button class="button"><a href="mailto:kaifan@umich.edu">Contact</a></button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Wenxuan Zhao</h2>
+        <p class="title">Senior</p>
+        <p>Knowledge is power</p>
+        <p>zwenxuan@umich.edu</p>
+        <p><button class="button"><a href="mailto:zwenxuan@umich.edu">Contact</a></button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>ZhiCheng Huang</h2>
+        <p class="title">Sophomore</p>
+        <p>I turn coffee into code</p>
+        <p>skyhuang@umich.edu</p>
+        <p><button class="button"><a href="mailto:skyhuang@umich.edu">Contact</a></button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Leo Yan</h2>
+        <p class="title">Junior</p>
+        <p>This project still feels like magic to me</p>
+        <p>leoyan@umich.edu</p>
+        <p><button class="button"><a href="mailto:leoyan@umich.edu">Contact</a></button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Patrick Su</h2>
+        <p class="title">Sophomore</p>
+        <p>Me Myself; everyone else is already taken</p>
+        <p>patsu@umich.edu</p>
+        <p><button class="button"><a href="mailto:patsu@umich.edu">Contact</a></button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

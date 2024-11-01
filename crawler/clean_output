@@ -1,0 +1,14 @@
+#!/bin/bash
+set -Eeuo pipefail
+
+check_file()
+{
+    sleep 1200
+    rm output.txt
+    touch output.txt
+}
+
+echo "$@: start clean output"
+while true; do
+    check_file
+done;

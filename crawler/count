@@ -1,0 +1,3 @@
+ls ./outputs/parsed_output/ | wc -l
+
+# Useage : watch -n 1 ./count
